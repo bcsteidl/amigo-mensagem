@@ -1,0 +1,13 @@
+{
+    "name": "amigo-mensagem",
+    "version": "2.5.0",
+    "description": "Plugin para montagem de uma janela de mensagem, podendo ser utilizado em NODEJS ou como plugin para desenvolvimento de frontend em javascript com JQuery",
+    "main": "index.js",
+    "scripts": {
+        "build": "NODE_PRD=FALSE webpack",
+        "build-min": "NODE_PRD=TRUE webpack -p",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Bruno César Steidl",
+    "license": "ISC"
+}
