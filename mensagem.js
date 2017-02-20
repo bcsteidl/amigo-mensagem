@@ -1,5 +1,5 @@
 (function($) {
 
-    $.fn.mensagem = require('../amigo-mensagem')
+    $.fn.mensagem = require('.')
 
 })(jQuery);
