@@ -1,6 +1,6 @@
 'use strict'
 
-const preparaOpcoes = require('./preparaOpcoes')
+const $ = require('jquery')
 
 // Obtem o posicionamento do mouse no momento do clique
 var mouseX = 0;

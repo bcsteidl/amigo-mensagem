@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--<html lang="pt-br" class='no-js' manifest='amigo.manifest'>-->
+<html lang="pt-br">
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Teste de mensagem de erro</title>
+
+    <script src='../node_modules/jquery/dist/jquery.min.js'></script>
+    <script src='../node_modules/jquery-ui-dist/jquery-ui.min.js'></script>
+    <script src='../dist/amigo-mensagem.js'></script>
+
+</head>
+
+<body>
+
+    <script>
+        $().mensagem({
+            tipo: "Normal",
+            mensagem: "Normal[0]:<br/>Esta é uma mensagem normal.",
+            largura: 400,
+            altura: 160
+        });
+    </script>
+
+</body>
+
+</html>

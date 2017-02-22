@@ -1,5 +1,7 @@
 'use strict'
 
+const $ = require('jquery')
+require('jquery-ui')
 const preparaOpcoes = require('./src/preparaOpcoes')
 
 // Obtem o posicionamento do mouse no momento do clique

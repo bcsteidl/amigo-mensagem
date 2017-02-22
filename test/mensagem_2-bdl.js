@@ -29152,13 +29152,21 @@ module.exports = function(parametros) {
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-(function($) {
+"use strict";
 
-    $.fn.mensagem = __webpack_require__(1)
 
-})(jQuery);
+const $ = __webpack_require__(0)
+
+$.fn.mensagem = __webpack_require__(1)
+
+$().mensagem({
+    tipo: "Normal",
+    mensagem: "Normal[0]:<br/>Esta é uma mensagem normal.",
+    largura: 400,
+    altura: 160
+});
 
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=amigo-mensagem.js.map
+//# sourceMappingURL=mensagem_2-bdl.js.map
