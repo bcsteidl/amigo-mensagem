@@ -1,5 +1,7 @@
 'use strict'
 
+require("./themes/amigo/jquery-ui.css")
+require('./css/mensagem.css')
 const $ = require('jquery')
 require('jquery-ui')
 const preparaOpcoes = require('./src/preparaOpcoes')
@@ -45,35 +47,22 @@ module.exports = function(parametros) {
         open: function(event, ui) {
             // Formata layout da área de mensagens
             $(this).css({
-                "height": (parseInt(opcoes.altura) - 99),
+                "height": (parseInt(opcoes.altura) - 95),
                 "border": "1px solid #000000",
-                "background": "#FFFFDD",
-                "-moz-border-radius": "4px",
-                "-webkit-border-radius": "4px",
-                "-o-border-radius": "4px",
-                "-ms-border-radius": "4px",
-                "border-radius": "4px",
-                "padding": ".5em .5em"
+                "background": "#FFFFDD"
             });
 
             // Formata o painel de botões
             $(this).parent().find(".ui-dialog-buttonpane").css({
-                "height": "30px",
-                "background": "#D6D6D6",
                 "border": "1px solid #000000",
-                "margin-top": "1px",
-                "-moz-border-radius": "4px",
-                "-webkit-border-radius": "4px",
-                "-o-border-radius": "4px",
-                "-ms-border-radius": "4px",
-                "border-radius": "4px"
+                "margin-top": "1px"
             });
 
-            // Formata os botões
-            var obj = $(this).parent().find(".ui-button")
-            $(obj).removeClass("ui-state-default ui-corner-all ui-button-text-only ui-state-focus")
-            $(obj).removeAttr("role")
-            $(obj).height(20).width(60);
+            // Formata os botões do painel
+            $(this).parent().find("button").css({
+                "border": "1px solid rgb(98, 94, 94)",
+                "margin-top": "0px"
+            });
 
             // Posiciona a janela na área de trabalho com efeito animado
             opcoes.horizontal = (opcoes.horizontal == "center" ? ($(window).width() - opcoes.largura) / 2 : opcoes.horizontal);

@@ -1,17 +1,24 @@
 {
     "name": "amigo-mensagem",
-    "version": "2.5.1",
+    "version": "2.5.2",
     "description": "Pacote para auxiliar na montagem de janelas de mensagens, podendo ser utilizado como CommonJS ou plugin na página principal do projeto.",
     "main": "index.js",
     "scripts": {
+        "start": "webpack-dev-server --content-base . --inline",
         "build": "NODE_PRD=FALSE webpack",
         "build-min": "NODE_PRD=TRUE webpack -p",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "cd test && webpack"
     },
     "author": "Bruno César Steidl",
     "license": "ISC",
     "dependencies": {
         "jquery": "^3.1.1",
         "jquery-ui-dist": "^1.12.1"
+    },
+    "devDependencies": {
+        "css-loader": "^0.26.1",
+        "file-loader": "^0.10.0",
+        "style-loader": "^0.13.1",
+        "url-loader": "^0.5.7"
     }
 }
